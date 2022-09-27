@@ -1,0 +1,118 @@
+
+/* animated icons  */
+
+.solutions__animatedicon {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0.5rem 0;
+}
+.solutions__animatedicon h2{
+padding-left: 0.5rem;
+position: relative;
+    text-transform: uppercase;
+    color: var(--clr-primary);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.solutions__animatedicon img {
+    animation-name: rotateme360;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotateme360 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+/* headings ------------- */
+
+.solutions__headings {
+/* display: flex; */
+
+}
+.solutions__headings h1{
+    margin-bottom: 0.9rem !important;
+    position: relative;
+    /* display: inline-block; */
+    font-size: var(--fs-700);
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    /* padding-bottom: 1rem; */
+}
+.solutions__headings p{
+max-width: 600px;
+margin: auto;
+color: #6b6b84;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: var(--fs-para);
+    text-align: center;
+}
+
+/* cards --- */
+.solutions__cards {
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+justify-content: center;
+margin: 3rem 0;
+
+gap: 10px;
+}
+.solutions__cards-item {
+    width:23rem;
+   
+    padding: 40px 30px;
+    
+    border-radius: 5px;
+    transition: .5s;
+    border: 1px solid #f5f3f2;
+    text-align: center;
+    cursor: pointer;
+}
+.solutions__cards-item:hover {
+    border: 1px solid var(--clr-primary);
+}
+.solutions__cards-item p{
+    color: #6b6b84;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: var(--fs-para);
+}
+.solutions__cards-item button {
+    display: inline-block;
+    color: var(--clr-primary);
+    margin-top: 3px;
+    position: relative;
+    font-size: 16.4px;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.solutions__cards-item span{
+    line-height: 1;
+    font-size: 65px;
+}
+
+.solutions__cards h2 {
+ padding: 1rem 0;
+ font-size: 24px; 
+ color: #221638 !important;
+    transition: .5s;
+}
+
+
+/* media queries ------------------
+--------------------------------- */
+
