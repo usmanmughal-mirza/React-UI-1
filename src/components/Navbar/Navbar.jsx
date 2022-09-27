@@ -17,6 +17,8 @@ const Navbar = () => {
 
 
   const handleClick =() =>setClick( (preState)=> !preState );
+  const closeMobileMenu = () => setClick(false);
+
 
   const handleInput =() =>{
     // console.log(inputRef);
@@ -61,7 +63,7 @@ const Navbar = () => {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
         >
-          <a href="#" className='navbar__menu-item__link'>Home
+          <a href="#" className='navbar__menu-item__link' onClick={closeMobileMenu}>Home
           <span  > 
             <RiArrowDownSLine className='navbar__menu-arrowdown' />
              </span>
@@ -71,28 +73,28 @@ const Navbar = () => {
 
         {/* ----*/}
         <li className='navbar__menu-item'>
-          <a href="#" className='navbar__menu-item__link'>About Us
+          <a href="#" className='navbar__menu-item__link' onClick={closeMobileMenu}>About Us
         
            </a>
         </li>
 
         <li className='navbar__menu-item'>
-          <a href="#" className='navbar__menu-item__link'>Services
+          <a href="#" className='navbar__menu-item__link' onClick={closeMobileMenu}>Services
            </a>
         </li>
 
         <li className='navbar__menu-item'>
-          <a href="#" className='navbar__menu-item__link'>Case Studies
+          <a href="#" className='navbar__menu-item__link' onClick={closeMobileMenu}>Case Studies
            </a>
         </li>
 
         <li className='navbar__menu-item'>
-          <a href="#" className='navbar__menu-item__link'>Pages
+          <a href="#" className='navbar__menu-item__link' onClick={closeMobileMenu}>Pages
            </a>
         </li>
 
         <li className='navbar__menu-item'>
-          <a href="#" className='navbar__menu-item__link'>Blog
+          <a href="#" className='navbar__menu-item__link' onClick={closeMobileMenu}>Blog
       
            </a>
         </li>
