@@ -33,7 +33,7 @@ const Team = () => {
       {/* --- animated icon */}
       <div className="solutions__animatedicon">
         <img src="https://tarn-react.envytheme.com/img/star-icon.png" alt="animated__img" />
-        <h2>OUR SOLUTIONS </h2>
+        <h2>TEAM MEMBERS </h2>
       </div>
       {/* headings ----- */}
       <div className="solutions__headings">
