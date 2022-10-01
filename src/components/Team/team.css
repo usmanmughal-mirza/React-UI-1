@@ -18,11 +18,12 @@
 
 .team__imgcontainer-item {
 text-align: center;
-
+position: relative;
 }
 .team__imgcontainer-item img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
     object-fit: cover;
 }
 .team__imgcontainer-item h2{
@@ -35,6 +36,39 @@ text-align: center;
     color: #ff5d22;
     font-size: 16px;
     font-weight: 600;
+}
+.team__imgcontainer-item__icons {
+position: absolute;
+bottom: 4.7rem;
+left: 0;
+opacity: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+transition: 0.7s;
+}
+.team__imgcontainer-item:hover  .team__imgcontainer-item__icons {
+    opacity: 1; 
+    transform: translateY(-1rem);
+}
+
+.team__imgcontainer-item__icons span {
+    background-color: white;
+    margin: 5px;
+    padding:0.5rem 0.6rem;
+    position: relative;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.team__imgcontainer-item__icons span:hover{
+    background-color: var(--clr-primary);
+    color: white;
+    cursor: pointer;
 }
 
 /* media ----------------------------------------------

@@ -19,50 +19,27 @@
 }
 .footer-first__icons {
   margin-top: 1.4rem;
+  display: flex;
+  align-items: center;
 }
 .footer-first__icons span {
-    cursor: pointer;
-    transition: 0.5s;
     color: white;
     background-color: #6b6b84;
+    margin: 5px;
+    padding:0.5rem 0.5rem;
     position: relative;
     border-radius: 5px;
-    margin-left: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .footer-first__icons span:hover{
     background-color: var(--clr-primary);
 }
-.footer-first__icons-icon {
-font-size: 1.2rem;
-}
 
-.footer-first__icons span:first-child {
-  margin-left: 0;
-  display: inline-block;
-  height: 1.9rem !important;
-  width: 2rem;
-  
-}
-.footer-first__icons span:nth-child(2){
-    display: inline-block;
-  height: 2rem !important;
-  width: 2rem;
-}
-.footer-first__icons span:nth-child(3){
-    display: inline-block;
-  height: 2rem !important;
-  width: 2rem;
-}
-.footer-first__icons span:nth-child(4){
-    display: inline-block;
-  height: 2rem !important;
-  width: 2rem;
-}
-.footer-first__icons-icon {
-    position: absolute;
-    top: 5px;
-    left:5px;
-}
 /* -- */
 /* second div  -- */
 .footer-second h2 {

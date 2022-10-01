@@ -1,5 +1,6 @@
 import React from 'react';
 import "./projects.css";
+import {BsPlusLg} from "react-icons/bs";
 
 const cards=[
   {
@@ -62,8 +63,13 @@ const Projects = () => {
             <div className="projects__cards">
         {cards.map( (card) =>(
             <div key={card.id} className="projects__cards-item">
-            
-            <img src={card.img} alt="card-img" />
+              <div className="projects__cards-item-img">
+              <img src={card.img} alt="card-img" />
+               <div className="projects__cards-item-img__wrapper">
+                <span> <BsPlusLg  /> </span>
+               </div>
+              </div>
+           
 
             <h2>{card.heading} </h2>
             <p>{card.project} </p>

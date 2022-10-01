@@ -4,7 +4,7 @@ import {card} from "./card";
 import {IoIosRocket,IoIosLaptop} from "react-icons/io";
 import {GrMoney} from "react-icons/gr"
 
-const icons=[<IoIosRocket /> , <IoIosLaptop /> , <GrMoney />  ]
+const icons=[<IoIosRocket  /> , <IoIosLaptop /> , <GrMoney />  ]
 
 
 const Solution = () => {

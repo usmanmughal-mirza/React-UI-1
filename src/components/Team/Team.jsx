@@ -1,5 +1,6 @@
 import React from 'react';
 import "./team.css";
+import {RiFacebookFill,RiTwitterFill,RiInstagramLine,RiLinkedinFill} from "react-icons/ri"
 
 const membersInfo=[
   {id:0,
@@ -51,6 +52,13 @@ const Team = () => {
             <img src={member.img} alt="img" />
             <h2>{member.name} </h2>
             <p>{member.profession} </p>
+
+            <div className="team__imgcontainer-item__icons">
+            <span><RiFacebookFill  className='team__imgcontainer-item__icons-icon'  /> </span> 
+          <span><RiInstagramLine className='team__imgcontainer-item__icons-icon'  /> </span>
+          <span><RiLinkedinFill  className='team__imgcontainer-item__icons-icon' /> </span>
+          <span><RiTwitterFill  className='team__imgcontainer-item__icons-icon' /> </span>          
+            </div>
           </div>
         ))}
 

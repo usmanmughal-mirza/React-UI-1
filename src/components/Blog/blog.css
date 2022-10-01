@@ -22,7 +22,11 @@
     /* text-align: center; */
     cursor: pointer;
     padding-bottom: 1.4rem !important;
+    /* background-color: indianred; */
 
+}
+.blog__cards-item:hover {
+    transform: translateY(-15px);
 }
 .blog__cards-item >  img {
     max-width: 100%;
